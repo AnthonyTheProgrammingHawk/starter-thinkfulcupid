@@ -79,7 +79,7 @@ Your final form design should look as follows:
 
 - The content in the remainder of the sections (i.e., "About", "Download", "Blog"), including any text and images, should stack on top of each other. Refer to the mobile design shared above.
 
-#### Responsive images
+//#### Responsive images
 
 - Write CSS for all images so that the images will match whatever container width they are placed within, and changing the container sizes will update the image sizes appropriately.
 
