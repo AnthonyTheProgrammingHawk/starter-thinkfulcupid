@@ -100,18 +100,21 @@ form {
 
 form div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 form label {
   font-weight: bold;
+  display: inline-block;
+  width: 150px;
+  text-align: left;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
-  
+  display: inline-block;
 }
 
 form button {
@@ -138,14 +141,71 @@ footer p {
 /* -------  Media Query ------- */
 @media all and (min-width: 480px) {
 
+  
   header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
+  main .item img {
+        
+    flex-direction: column;
+  }
+
+  .change {
+    width: 50%;
+  }
   .join {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .smallsize {
+    width: 20%;
+    padding: 5px;
+    padding-right: 20px;
+  }
+  .stacked {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+  .smallersize {
+    width: 55%;
+  }
+  .side {
+    display: flex;
+    flex-direction: row;
+  }
+  .sizeup {
+    max-width: 96%;
+    height: auto;
+    margin: auto;
+  }
+  #img2 {
+    max-width: 50%;
+    height: auto;
+  }
+  #blog p {
+    margin: 25px;
+  }
+  #blog h3 {
+    margin: 25px;
+  }
+  .pad{
+    padding:0 30px;
+  }
+  .pad2{
+    padding: 100px 0;
+  }
+ 
 }
