@@ -33,11 +33,11 @@ section.alternate-background {
 
 img {
   width: 100%;
+  padding-bottom: 20px;
 }
 
 div {
   display: flex;
-  flex-direction: column;
 }
 
 /* ---  Groups & Items --- */
@@ -96,11 +96,13 @@ header nav ul li a:hover {
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 form div {
-  display: flex;
-  flex-direction: column;
+  display: flex; 
+  justify-content: space-between;
 }
 
 form label {
