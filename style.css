@@ -60,7 +60,7 @@ div {
 /* -------  Navigation ------- */
 
 header {
-  display: flex;
+  display: none;
   background-color: #83092e;
   padding: 20px 20px 0 20px;
   text-align: center;
