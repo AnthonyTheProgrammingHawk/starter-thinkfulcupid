@@ -38,6 +38,7 @@ img {
 
 div {
   display: flex;
+  flex-direction: column;
 }
 
 /* ---  Groups & Items --- */
@@ -59,6 +60,7 @@ div {
 /* -------  Navigation ------- */
 
 header {
+  display: flex;
   background-color: #83092e;
   padding: 20px 20px 0 20px;
   text-align: center;
@@ -83,8 +85,7 @@ header nav ul li {
 header nav ul li a {
   color: #ecdbc9;
   text-decoration: none;
-  padding: 0 20px 0 0;
-  
+  padding: 0 20px 0 0; 
 }
 
 header nav ul li a:hover {
@@ -98,6 +99,7 @@ form {
   padding: 10px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 form div {
@@ -143,21 +145,26 @@ footer p {
 /* -------  Media Query ------- */
 @media all and (min-width: 480px) {
 
+  div{
+    display: flex;
+    flex-direction: row;
+  }
   
   header {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
   }
 
   main .item img {
-        
+    display: flex;    
     flex-direction: column;
   }
 
   .change {
     width: 50%;
   }
+
   .join {
     display: flex;
     flex-direction: row;
@@ -169,45 +176,53 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
+
   .smallsize {
     width: 20%;
     padding: 5px;
     padding-right: 20px;
   }
+
   .stacked {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
   }
+
   .smallersize {
     width: 55%;
   }
+
   .side {
     display: flex;
     flex-direction: row;
   }
+
   .sizeup {
     max-width: 96%;
     height: auto;
     margin: auto;
   }
+
   #img2 {
     max-width: 50%;
     height: auto;
   }
+
   #blog p {
     margin: 25px;
   }
+
   #blog h3 {
     margin: 25px;
   }
+
   .pad{
     padding:0 30px;
   }
+
   .pad2{
     padding: 100px 0;
   }
- 
 }
